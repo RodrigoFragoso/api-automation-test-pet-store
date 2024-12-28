@@ -36,7 +36,7 @@ jobs:
           force_orphan: true
 
       - name: Display Test Report URL
-        if: success()
+        if: always()
         run: |
           echo "📊 Test Report is available at:"
           echo "https://rodrigofragoso.github.io/api-automation-test-pet-store/integration-test-report.html"
