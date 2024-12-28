@@ -1,0 +1,4 @@
+node_modules
+
+# Não ignorar a pasta .husky
+!.husky

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="10" failures="0" errors="0" time="6.397">
+  <testsuite name="Operations about user" errors="0" failures="0" skipped="3" timestamp="2024-12-28T01:02:51" time="3.063" tests="4">
+    <testcase classname="Operations about user POST /user should create a new user and return it with status 201" name="Operations about user POST /user should create a new user and return it with status 201" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Operations about user POST /user should return a 500 status code when the problem with the server" name="Operations about user POST /user should return a 500 status code when the problem with the server" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Operations about user GET /user should return a 200 status code when the user is found" name="Operations about user GET /user should return a 200 status code when the user is found" time="0.794">
+    </testcase>
+    <testcase classname="Operations about user GET /user should return a 404 status code when the user is not found" name="Operations about user GET /user should return a 404 status code when the user is not found" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+  <testsuite name="Everything about your Pets" errors="0" failures="0" skipped="0" timestamp="2024-12-28T01:02:51" time="4.614" tests="2">
+    <testcase classname="Everything about your Pets POST /pets should create a pet" name="Everything about your Pets POST /pets should create a pet" time="0.7">
+    </testcase>
+    <testcase classname="Everything about your Pets PUT /pets should update a pet" name="Everything about your Pets PUT /pets should update a pet" time="1.54">
+    </testcase>
+  </testsuite>
+  <testsuite name="Access to Petstore orders" errors="0" failures="0" skipped="1" timestamp="2024-12-28T01:02:51" time="6.153" tests="4">
+    <testcase classname="Access to Petstore orders POST /store/order should create a new order" name="Access to Petstore orders POST /store/order should create a new order" time="0.704">
+    </testcase>
+    <testcase classname="Access to Petstore orders GET /store/order/{orderId} should return a 200 status code when the order is found" name="Access to Petstore orders GET /store/order/{orderId} should return a 200 status code when the order is found" time="1.564">
+    </testcase>
+    <testcase classname="Access to Petstore orders DELETE /store/order/{orderId} should delete an order" name="Access to Petstore orders DELETE /store/order/{orderId} should delete an order" time="1.536">
+    </testcase>
+    <testcase classname="Access to Petstore orders DELETE /store/order/{orderId} should return a 404 status code when the order is not found" name="Access to Petstore orders DELETE /store/order/{orderId} should return a 404 status code when the order is not found" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+</testsuites>
