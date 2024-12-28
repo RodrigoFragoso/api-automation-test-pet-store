@@ -28,6 +28,12 @@ jobs:
         run: |
           mkdir -p reports-integration-tests
           npm run test:integration:prd
+          ls -la reports-integration-tests
+
+      - name: List files
+        run: |
+          echo "Conteúdo do diretório reports-integration-tests:"
+          ls -R reports-integration-tests/
 
       - name: Deploy to GitHub Pages
         if: success()
@@ -35,3 +41,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./reports-integration-tests
+          force_orphan: true
+          enable_jekyll: false
