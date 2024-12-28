@@ -1,4 +1,4 @@
-# Petstore Supertest Tests
+# Petstore Tests - Automation testes
 
 ## Why API Tests at the Integration Layer?
 
@@ -33,7 +33,7 @@ Before starting, make sure you have the following installed on your machine:
 2. Navigate to the project directory:
 
    ```bash
-   cd petstore-supertest-tests
+   cd api-automation-test-pet-store
    ```
 
 3. Install the project dependencies:
