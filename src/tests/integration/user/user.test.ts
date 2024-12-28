@@ -11,8 +11,7 @@ import {
 
 describe('Operations about user', () => {
     describe('POST /user', () => {
-      // TODO: test skip because the server is not ready
-      it.skip('should create a new user and return it with status 201', async () => {
+      it('should create a new user and return it with status 201', async () => {
         const payloadUser = {
           id: faker.number.int(),
           username: faker.internet.userName(),
@@ -23,13 +22,13 @@ describe('Operations about user', () => {
           phone: faker.phone.number(),
           userStatus: faker.number.int({ min: 0, max: 1 })
         };
-  
+
         const response: Response = await postUser(payloadUser);
-   
+
         expects.checkCreateUser(response, payloadUser);
       });
 
-      it.skip('should return a 500 status code when the problem with the server', async () => {
+      it('should return a 500 status code when the problem with the server', async () => {
         const payloadUser = {
           id: faker.number.int(),
           username: faker.internet.userName(),
