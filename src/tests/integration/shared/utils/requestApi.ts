@@ -12,7 +12,7 @@ export const getRequest = async (
 
 export const postRequest = async (
   endpoint: string,
-  payload: any
+  payload: Record<string, unknown>
 ): Promise<Response> => {
   const response = await request(process.env.API_URL || '')
     .post(endpoint)
@@ -23,7 +23,7 @@ export const postRequest = async (
 
 export const putRequest = async (
   endpoint: string,
-  payload: any
+  payload: Record<string, unknown>
 ): Promise<Response> => {
   const response = await request(process.env.API_URL || '')
     .put(endpoint)

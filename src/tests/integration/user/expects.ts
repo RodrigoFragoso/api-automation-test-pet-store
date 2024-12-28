@@ -3,7 +3,7 @@ import { Response } from 'supertest';
 import { expectDefaultResponse } from '../shared/utils/expectsCommons';
 
 class Expects {
-  checkCreateUser(response: Response, payloadUser: any) {
+  checkCreateUser(response: Response, payloadUser: Record<string, unknown>) {
     expectDefaultResponse(response, 200);
     expect(response.body).toEqual({ ...payloadUser });
   }
