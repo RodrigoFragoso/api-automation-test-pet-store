@@ -4,7 +4,7 @@ import importPlugin from 'eslint-plugin-import';
 
 export default [
   {
-    files: ['**/*.ts', '**/*.tsx'], // Aplica a configuração a arquivos TypeScript
+    files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
       parser: parser,
       ecmaVersion: 2020,

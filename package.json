@@ -6,9 +6,9 @@
         "test": "jest",
         "test:integration:prd": "npx dotenv-cli -e .env.test.production -- jest --config jest.integration.config.js --verbose --forceExit",
         "start": "ts-node src/app.ts",
-        "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-        "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix",
-        "lint:check": "eslint 'src/**/*.{ts,tsx}' --check",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "lint:check": "eslint . --check",
         "prepare": "husky install"
     },
     "devDependencies": {
