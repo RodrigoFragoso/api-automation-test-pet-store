@@ -28,7 +28,7 @@ jobs:
         run: npm run test:integration:prd
 
       - name: Deploy to GitHub Pages
-        if: success()
+        if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -36,7 +36,7 @@ jobs:
           force_orphan: true
 
       - name: Display Test Report URL
-        if: success()
+        if: always()
         run: |
           echo "📊 Test Report is available at:"
           echo "https://rodrigofragoso.github.io/api-automation-test-pet-store/integration-test-report.html"
