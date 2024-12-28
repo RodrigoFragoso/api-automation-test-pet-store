@@ -1,4 +1,3 @@
 node_modules
-
-# Não ignorar a pasta .husky
 !.husky
+reports-integration-tests

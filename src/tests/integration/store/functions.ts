@@ -7,7 +7,7 @@ import {
 } from '../shared/utils/requestApi';
 
 export const postOrder = async (
-  payload: any,
+  payload: Record<string, unknown>,
 ): Promise<Response> => {
   const endpoint = '/store/order';
   return await postRequest(endpoint, payload);

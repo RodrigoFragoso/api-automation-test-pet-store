@@ -6,7 +6,7 @@ import {
 } from '../shared/utils/requestApi';
 
 export const postUser = async (
-  payload: any,
+  payload: Record<string, unknown>
 ): Promise<Response> => {
   const endpoint = '/user';
   return await postRequest(endpoint, payload);
