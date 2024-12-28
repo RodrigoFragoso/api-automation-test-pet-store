@@ -62,6 +62,16 @@ npm run test:integration:prd
 
 This command will execute the tests defined in the `src/tests/integration` directory and generate HTML and XML reports in the `reports-integration-tests` folder.
 
+### 📊  Test Report
+
+After running the tests, you can view the HTML report at:
+
+```
+https://rodrigofragoso.github.io/api-automation-test-pet-store/integration-test-report.html
+```
+
+This report provides a detailed view of all test results, including passed, failed, and skipped tests.
+
 ## Project Structure
 
 - `src/tests/integration`: Contains integration tests for the different functionalities of the API.
