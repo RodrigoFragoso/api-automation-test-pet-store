@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="10" failures="1" errors="0" time="5.905">
+  <testsuite name="Everything about your Pets" errors="0" failures="0" skipped="0" timestamp="2024-12-28T10:30:39" time="5.289" tests="2">
+    <testcase classname="Everything about your Pets POST /pets should create a pet" name="Everything about your Pets POST /pets should create a pet" time="0.055">
+    </testcase>
+    <testcase classname="Everything about your Pets PUT /pets should update a pet" name="Everything about your Pets PUT /pets should update a pet" time="0.195">
+    </testcase>
+  </testsuite>
+  <testsuite name="Operations about user" errors="0" failures="1" skipped="1" timestamp="2024-12-28T10:30:39" time="5.567" tests="4">
+    <testcase classname="Operations about user POST /user should create a new user and return it with status 201" name="Operations about user POST /user should create a new user and return it with status 201" time="0.098">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 500
+    at expectDefaultResponse (/home/runner/work/api-automation-test-pet-store/api-automation-test-pet-store/src/tests/integration/shared/utils/expectsCommons.ts:4:27)
+    at Expects.checkCreateUser (/home/runner/work/api-automation-test-pet-store/api-automation-test-pet-store/src/tests/integration/user/expects.ts:7:26)
+    at /home/runner/work/api-automation-test-pet-store/api-automation-test-pet-store/src/tests/integration/user/user.test.ts:28:17
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (/home/runner/work/api-automation-test-pet-store/api-automation-test-pet-store/src/tests/integration/user/user.test.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+    </testcase>
+    <testcase classname="Operations about user POST /user should return a 500 status code when the problem with the server" name="Operations about user POST /user should return a 500 status code when the problem with the server" time="0.208">
+    </testcase>
+    <testcase classname="Operations about user GET /user should return a 200 status code when the user is found" name="Operations about user GET /user should return a 200 status code when the user is found" time="0.037">
+    </testcase>
+    <testcase classname="Operations about user GET /user should return a 404 status code when the user is not found" name="Operations about user GET /user should return a 404 status code when the user is not found" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+  <testsuite name="Access to Petstore orders" errors="0" failures="0" skipped="1" timestamp="2024-12-28T10:30:39" time="5.619" tests="4">
+    <testcase classname="Access to Petstore orders POST /store/order should create a new order" name="Access to Petstore orders POST /store/order should create a new order" time="0.047">
+    </testcase>
+    <testcase classname="Access to Petstore orders GET /store/order/{orderId} should return a 200 status code when the order is found" name="Access to Petstore orders GET /store/order/{orderId} should return a 200 status code when the order is found" time="0.243">
+    </testcase>
+    <testcase classname="Access to Petstore orders DELETE /store/order/{orderId} should delete an order" name="Access to Petstore orders DELETE /store/order/{orderId} should delete an order" time="0.036">
+    </testcase>
+    <testcase classname="Access to Petstore orders DELETE /store/order/{orderId} should return a 404 status code when the order is not found" name="Access to Petstore orders DELETE /store/order/{orderId} should return a 404 status code when the order is not found" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+</testsuites>
